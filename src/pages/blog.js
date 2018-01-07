@@ -1,17 +1,18 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styled from 'styled-components';
+import glamorous from 'glamorous';
 import { format } from 'date-fns';
 
 import { ContentPadding } from '@components';
+import { colors } from '@utils';
 
-const PostDate = styled.span`
-  margin-right: 1rem;
-`;
+const PostDate = glamorous.span({
+  marginRight: '1rem',
+});
 
-const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.black};
-`;
+const StyledLink = glamorous(Link)((props, theme) => ({
+  color: colors.black,
+}));
 
 const BlogPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;

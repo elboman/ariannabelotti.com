@@ -1,71 +1,82 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import glamorous from 'glamorous';
 import Link from 'gatsby-link';
 
 import { Hamburger } from '@components';
 
-import { media, font, menuConfig } from '@utils';
+import { media, font, menuConfig, colors } from '@utils';
 
-const SCWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+const SCWrapper = glamorous.div({
+  display: 'flex',
+  flexDirection: 'row',
+});
 
-const SCHamburger = styled.div`
-  margin-right: 1rem;
-  ${media.desktop`
-    display: none;
-  `};
-`;
+const SCHamburger = glamorous.div({
+  marginRight: '1rem',
+  [media.desktop]: {
+    display: 'none',
+  },
+});
 
-const SCMenu = styled.nav`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  display: ${props => (props.open ? 'flex' : 'none')};
-  background: ${props => props.theme.colors.white};
-  ${media.tabletOnly`
-    background: ${props => props.theme.colors.white};
-    display: ${props => (props.open ? 'flex' : 'none')};
-    flex-direction: row;
-    width: 100%;
-    height: 6rem;
-    position: absolute;
-    top: 0;
-    right: 6rem;
-    left: auto;
-    justify-content: flex-end;
-  `} ${media.desktop`
-    background: none;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-  `};
-`;
+const SCMenu = glamorous.nav(
+  {
+    position: 'fixed',
+    width: '100%',
+    height: '100%',
+    zIndex: '2',
+    top: '0',
+    left: '0',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    [media.tabletOnly]: {
+      flexDirection: 'row',
+      width: '100%',
+      height: '6rem',
+      position: 'absolute',
+      top: '0',
+      right: '6rem',
+      left: 'auto',
+      justifyContent: 'flex-end',
+    },
+    [media.desktop]: {
+      background: 'none',
+      display: 'flex',
+      flexDirection: 'row',
+      position: 'relative',
+      top: '0',
+      left: '0',
+      right: '0',
+    },
+  },
+  (props, theme) => ({
+    display: props.open ? 'flex' : 'none',
+    background: colors.white,
+    [media.tabletOnly]: {
+      background: colors.white,
+      display: props.open ? 'flex' : 'none',
+    },
+  })
+);
 
-const SCItem = styled.span`
-  font-family: ${font.title};
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2rem;
-
-  ${media.notMobile`
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  `} a {
-    color: ${props => props.theme.colors.black};
-    text-decoration: none;
-  }
-`;
+const SCItem = glamorous.span(
+  {
+    fontFamily: font.title,
+    fontWeight: '700',
+    textDecoration: 'none',
+    fontSize: '2rem',
+    [media.notMobile]: {
+      marginRight: '2rem',
+      fontSize: '1.2rem',
+    },
+  },
+  (props, theme) => ({
+    '& a': {
+      color: colors.black,
+      textDecoration: 'none',
+    },
+  })
+);
 
 export class Menu extends Component {
   state = {
@@ -87,7 +98,7 @@ export class Menu extends Component {
         </SCHamburger>
         <SCMenu open={isOpen}>
           {menuConfig.map(single => (
-            <SCItem>
+            <SCItem key={single.path}>
               <Link
                 to={single.path}
                 onClick={this.handleClick}

@@ -1,2 +1,2 @@
-export * from './styled.config';
+export * from './glamorous.config';
 export * from './menu.config';

@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-twitter`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

@@ -1,26 +1,12 @@
-import { css } from 'styled-components';
-
 const breakpoints = {
   small: '52rem',
   big: '75rem',
 };
 
 export const media = {
-  tabletOnly: (...args) => css`
-    @media (min-width: ${breakpoints.small}) and (max-width: ${breakpoints.big}) {
-      ${css(...args)};
-    }
-  `,
-  notMobile: (...args) => css`
-    @media (min-width: ${breakpoints.small}) {
-      ${css(...args)};
-    }
-  `,
-  desktop: (...args) => css`
-    @media (min-width: ${breakpoints.big}) {
-      ${css(...args)};
-    }
-  `,
+  tabletOnly: `@media (min-width: ${breakpoints.small}) and (max-width: ${breakpoints.big})`,
+  notMobile: `@media (min-width: ${breakpoints.small})`,
+  desktop: `@media (min-width: ${breakpoints.big})`,
 };
 
 export const font = {

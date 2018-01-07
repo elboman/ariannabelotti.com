@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider, injectGlobal } from 'styled-components';
+import { css } from 'glamor';
+import { ThemeProvider } from 'glamorous';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
@@ -10,7 +11,7 @@ import { colors } from '@utils';
 
 import './index.css';
 
-injectGlobal`
+css.insert(`
   html {
     font-family: 'Spectral', serif;
     font-size: 100%;
@@ -75,11 +76,13 @@ injectGlobal`
   .twitter-tweet {
     margin: 3.1rem auto !important;
   }
-`;
+`);
 
 const theme = {
-  colors: {
-    ...colors,
+  main: {
+    colors: {
+      ...colors,
+    },
   },
 };
 

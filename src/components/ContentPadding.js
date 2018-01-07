@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import glamorous from 'glamorous';
 
-const WithPaddingTop = styled.div`
-  padding: 6rem 0 0 0;
-`;
+const WithPaddingTop = glamorous.div({
+  padding: '6rem 0 0 0',
+});
 
 export const ContentPadding = props => <WithPaddingTop {...props} />;

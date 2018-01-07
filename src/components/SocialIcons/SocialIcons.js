@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { injectGlobal } from 'styled-components';
+import glamorous from 'glamorous';
 import { SocialIcon } from 'react-social-icons';
 
 import { colors } from '@utils';
@@ -23,25 +23,22 @@ const socials = [
   },
 ];
 
-const Wrapper = styled.div`
-  position: relative;
-  display: inline-block;
-
-  .social-icon {
-    width: 2rem !important;
-    height: 2rem !important;
-    margin-left: 1rem;
-    transition: transform 0.2s ease;
-
-    :hover {
-      transform: scale(1.2);
-    }
-  }
-
-  .social-svg-mask {
-    fill: ${colors.lightGrey} !important;
-  }
-`;
+const Wrapper = glamorous.div({
+  position: 'relative',
+  display: 'inline-block',
+  '& .social-icon': {
+    width: '2rem !important',
+    height: '2rem !important',
+    marginLeft: '1rem',
+    transition: 'transform 0.2s ease',
+    ':hover': {
+      transform: 'scale(1.2)',
+    },
+  },
+  '& .social-svg-mask': {
+    fill: `${colors.lightGrey} !important`,
+  },
+});
 
 export const SocialIcons = () => (
   <Wrapper>

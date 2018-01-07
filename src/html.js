@@ -1,6 +1,5 @@
 import React from 'react';
 import Typekit from 'react-typekit';
-import styled, { injectGlobal } from 'styled-components';
 
 import { colors } from '@utils';
 
