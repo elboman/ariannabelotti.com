@@ -1,0 +1,7 @@
+{
+  "name": "gatsby-works-files",
+  "version": "0.0.1",
+  "dependencies": {
+    "is-relative-url": "^2.0.0"
+  }
+}
