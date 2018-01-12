@@ -12,13 +12,9 @@ module.exports = {
         fonts: [`Spectral:300,300i,400,400i,700`],
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/_posts`,
-        name: 'blog',
-      },
-    },
+    // Transformers
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-yaml`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -37,5 +33,27 @@ module.exports = {
         ],
       },
     },
+    // sources
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/_works`,
+        name: 'works',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/_posts`,
+        name: 'blog',
+      },
+    },
+    {
+      resolve: `gatsby-works-files`,
+      options: {
+        allowedExtensions: ['mp4'],
+      },
+    },
+    'gatsby-remark-source-instance',
   ],
 };

@@ -2,18 +2,10 @@ import React from 'react';
 import Link from 'gatsby-link';
 import glamorous from 'glamorous';
 
-import { SocialIcons } from '@components';
+import { ContentWrapper, SocialIcons } from '@components';
 import { media, font } from '@utils';
 
 import thankYouGif from '@assets/thankyou.gif';
-
-const ContentWrapper = glamorous.div({
-  padding: '6rem 0 0',
-  [media.desktop]: {
-    height: '100%',
-    position: 'relative',
-  },
-});
 
 const ContentInner = glamorous.div({
   [media.desktop]: {

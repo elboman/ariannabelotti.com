@@ -14,13 +14,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   const BlogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const WorkTemplate = path.resolve(`src/templates/work.js`);
 
   return graphql(`
-    {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+    query {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             excerpt(pruneLength: 250)
@@ -31,6 +29,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               slug
               title
             }
+            fields {
+              sourceInstanceName
+            }
           }
         }
       }
@@ -40,10 +41,27 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const blogPosts = result.data.allMarkdownRemark.edges.filter(
+      single => single.node.fields.sourceInstanceName === 'blog'
+    );
+    const works = result.data.allMarkdownRemark.edges.filter(
+      single => single.node.fields.sourceInstanceName === 'works'
+    );
+
+    blogPosts.forEach(({ node }) => {
       createPage({
         path: `/blog/${node.frontmatter.slug}`,
         component: BlogPostTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      });
+    });
+
+    works.forEach(({ node }) => {
+      createPage({
+        path: `/works/${node.frontmatter.slug}`,
+        component: WorkTemplate,
         context: {
           slug: node.frontmatter.slug,
         },
