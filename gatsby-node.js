@@ -18,7 +18,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { published: { eq: true } } }
+      ) {
         edges {
           node {
             excerpt(pruneLength: 250)

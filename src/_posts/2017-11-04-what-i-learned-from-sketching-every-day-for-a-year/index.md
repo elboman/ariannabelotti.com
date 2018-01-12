@@ -2,6 +2,7 @@
 slug: "what-i-learned-from-sketching-every-day-for-a-year"
 date: "2017-11-04T08:00:00Z"
 title: "What I learned from sketching every day for a year"
+published: true
 ---
 
 # What I learned from sketching every day for a year
@@ -22,7 +23,7 @@ Most of the times the end result was **totally different from the one I had in m
 I was then spending most of the time looking at the subject than actually drawing.
 **And my works improved a lot because of this**.
 
-New first rule: *always look before drawing*.
+New first rule: _always look before drawing_.
 
 ### Why is that?
 
@@ -31,7 +32,7 @@ The brain synthesizes shapes for us to help us storage a lot information with th
 
 **Drawing** on the other hand **is a tool created to resemble reality in the best way possible**, so we need to actively work against our brain and use as meaningful and accurate details as possible.
 
-*Understanding this process of synthesis is the key in choosing the right details when drawing, literally reverse-engineering the brain*.
+_Understanding this process of synthesis is the key in choosing the right details when drawing, literally reverse-engineering the brain_.
 
 **Lighting has a big part in this** as the pictures our eyes can see are actually just light.
 The way it interacts with the world (bouncing around) **tells the brain a plethora of information: materials, sources, shadows, temperature and so on**.
@@ -59,7 +60,7 @@ This is why I started keeping digital and physical sketchbooks.
 Mistakes are a necessary evil.
 The more errors you become aware of, the more things you can improve.
 
-*It's more an exercise for the brain than for the hand*.
+_It's more an exercise for the brain than for the hand_.
 
 ## Experimenting styles and techniques
 
@@ -87,25 +88,25 @@ Looking back now, **my best work was done without work-related pressure**, as my
 
 It's important for me to always remember the fact that I just enjoy drawing.
 
-*It all started as a passion.
-And as any passion, it must be cultivated*.
+_It all started as a passion.
+And as any passion, it must be cultivated_.
 
 ## Developing creativity
 
-I like how these right-before-work sketches are usually called *warmup sketches*.
+I like how these right-before-work sketches are usually called _warmup sketches_.
 
-Just like in sports, you cannot dive into something from a *cold* state otherwise your performance will be negatively affected.
+Just like in sports, you cannot dive into something from a _cold_ state otherwise your performance will be negatively affected.
 The brain is just like any other muscle, **creativity doesn't simply flow at request, you need to warm it up**.
 
-Furthermore I noticed that the *warmups* **help me switch my attention from everyday/private life to work**.
+Furthermore I noticed that the _warmups_ **help me switch my attention from everyday/private life to work**.
 They help me reduce my [attention residue](https://ideas.repec.org/a/eee/jobhdp/v109y2009i2p168-181.html).
 
-I tend to approach them with *autopilot mode*. If I start thinking about them too much I simply create new residue and they lose purpose.
+I tend to approach them with _autopilot mode_. If I start thinking about them too much I simply create new residue and they lose purpose.
 
 Sometimes looking at my warmups I find something worth following up and further develop them.
 
-*Creativity isn't just a switch you can turn on, several factors come into play.
-One of those is your subconscious*.
+_Creativity isn't just a switch you can turn on, several factors come into play.
+One of those is your subconscious_.
 
 ---
 

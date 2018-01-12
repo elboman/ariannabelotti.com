@@ -2,6 +2,7 @@
 slug: "challenge-yourself-as-an-artist"
 date: "2016-12-14T08:00:00Z"
 title: "Challenge yourself as an artist"
+published: true
 ---
 
 # Challenge yourself as an artist
@@ -32,7 +33,7 @@ During the month unexpected things will happen: I found myself rushing the drawi
 
 Finding a new subject each day was tough. The first days I almost regretted not having chosen a common concept. But then I got used to it.
 
-By the end of the month I developed a *library* in my mind I could reach on to and I could elaborate whenever I needed (i.e. types of characters, environments & settings, etc.).
+By the end of the month I developed a _library_ in my mind I could reach on to and I could elaborate whenever I needed (i.e. types of characters, environments & settings, etc.).
 
 Creativity is something you **learn and develop with experience and practice**, you are not born with it. [Quantum mechanics supports](http://www.enchantedmind.com/html/science/quantum_brain.Html) the theory that personal creativity is developed stimulating the brain in order to create more synapsis.
 
@@ -56,7 +57,7 @@ I was never really interested in putting too much effort towards social media in
 
 Getting to know active people in the community led me to **broaden my perspective regarding illustration in general and my life as a freelance**. I now keep in touch with people around the world and it’s awesome how much we share and learn.
 
-Sharing my work allowed me to analyze my content, see what people liked more and what less. One thing I learned this way is this: *a story behind the draw helps people connect with it*.
+Sharing my work allowed me to analyze my content, see what people liked more and what less. One thing I learned this way is this: _a story behind the draw helps people connect with it_.
 
 As I gained confidence I started approaching my drawings as **frames of some hypothetical animation**, by giving it motion, as opposed to just present a couple of characters in pose. The end result is definitely more dynamic and engaging and leave people wondering what could be next.
 
@@ -72,9 +73,8 @@ Next years I’d like to give it a more complex and structural approach (perhaps
 
 Thank you for reading and I hope my experience and my thoughts can be helpful for you.
 
-See you next time ^_^
+See you next time ^\_^
 
 PS: If you would like to take a look at my Inktober 2016 works here’s the twitter thread:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/inktober2016?src=hash&amp;ref_src=twsrc%5Etfw">#inktober2016</a> Day 1, let&#39;s start! 🎉 🎉 <a href="https://twitter.com/inktober?ref_src=twsrc%5Etfw">@inktober</a> <a href="https://t.co/FHYz3ugZ33">pic.twitter.com/FHYz3ugZ33</a></p>&mdash; Arianna Belotti (@_ariabba) <a href="https://twitter.com/_ariabba/status/782240053410037762?ref_src=twsrc%5Etfw">October 1, 2016</a></blockquote>
-
