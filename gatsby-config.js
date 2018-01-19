@@ -1,10 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Arianna Belotti`,
+    siteUrl: `https://www.ariannabelotti.com`,
   },
   plugins: [
     `gatsby-plugin-twitter`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -28,6 +31,16 @@ module.exports = {
               maxWidth: 864,
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-custom-blocks',
+            options: {
+              blocks: {
+                block: 'content-block',
+                video: 'video-wrapper',
+                videoSquare: 'video-square',
+              },
             },
           },
         ],
