@@ -15,6 +15,12 @@ module.exports = {
         fonts: [`Spectral:300,300i,400,400i,700`],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
+      },
+    },
     // Transformers
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
