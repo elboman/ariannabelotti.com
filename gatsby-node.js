@@ -11,7 +11,18 @@ exports.modifyWebpackConfig = function({ config, env }) {
 };
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+  const { createPage, createRedirect } = boundActionCreators;
+
+  // Redirects
+
+  createRedirect({
+    fromPath: `/`,
+    isPermanent: false,
+    redirectInBrowser: true,
+    toPath: `/works`,
+  });
+
+  // Pages
 
   const BlogPostTemplate = path.resolve(`src/templates/blog-post.js`);
   const WorkTemplate = path.resolve(`src/templates/work.js`);

@@ -51,7 +51,7 @@ const SCMenuItem = glamorous.div({
 
 export const Navbar = ({ menu }) => (
   <SCWrapper>
-    <Link to="/">
+    <Link to="/works">
       <SCLogo>
         <img src={profilePic} />
       </SCLogo>
