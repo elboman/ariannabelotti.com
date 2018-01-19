@@ -1,14 +1,22 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import glamorous from 'glamorous';
 
 import { ContentPadding } from '@components';
+
+const Content = glamorous.div({
+  textAlign: 'center',
+  '& h1': {
+    marginBottom: '2.45rem',
+  },
+});
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return (
     <ContentPadding>
       <Helmet title={`${post.frontmatter.title} - Arianna Belotti`} />
-      <div
+      <Content
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />

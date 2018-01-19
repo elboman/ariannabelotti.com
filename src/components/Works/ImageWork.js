@@ -1,6 +1,6 @@
 import glamorous from 'glamorous';
 
-const SingleWork = glamorous.div();
+import { WorkWrapper, WorkInfo } from './WorkWrapper';
 
 const Image = glamorous.img({
   width: '100%',
@@ -8,8 +8,9 @@ const Image = glamorous.img({
   display: 'block',
 });
 
-export const ImageWork = ({ src }) => (
-  <SingleWork>
+export const ImageWork = ({ src, overlay: { title, role } }) => (
+  <WorkWrapper>
     <Image src={src} />
-  </SingleWork>
+    <WorkInfo title={title} description={role} />
+  </WorkWrapper>
 );

@@ -1,0 +1,47 @@
+.content-block {
+  margin-bottom: 3rem;
+  text-align: center;
+  p {
+    font-style: italic;
+  }
+  video {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+}
+
+.video-wrapper,
+.video-square {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-square {
+  padding-bottom: 100%;
+  &-wrapper {
+    width: 100%;
+    max-width: 600px;
+    display: inline-block;
+  }
+}
+
+.work-description {
+  margin: 4rem auto;
+  width: 30rem;
+  max-width: 100%;
+  font-size: 1.2rem;
+
+  @media screen and (min-width: 75rem) {
+    font-size: 1.3rem;
+  }
+}

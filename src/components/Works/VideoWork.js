@@ -1,6 +1,6 @@
 import glamorous from 'glamorous';
 
-const SingleWork = glamorous.div();
+import { WorkWrapper, WorkInfo } from './WorkWrapper';
 
 const Video = glamorous.video({
   width: '100%',
@@ -8,10 +8,11 @@ const Video = glamorous.video({
   display: 'block',
 });
 
-export const VideoWork = ({ url }) => (
-  <SingleWork>
+export const VideoWork = ({ url, overlay: { title, role } }) => (
+  <WorkWrapper>
     <Video autoPlay loop>
       <source src={url} type="video/mp4" />
     </Video>
-  </SingleWork>
+    <WorkInfo title={title} description={role} />
+  </WorkWrapper>
 );
