@@ -74,5 +74,6 @@ module.exports = {
       },
     },
     'gatsby-remark-source-instance',
+    'gatsby-plugin-netlify',
   ],
 };
