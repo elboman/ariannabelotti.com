@@ -9,7 +9,7 @@ overlay:
     role: 'design & animation'
 ---
 
-# Personal work
+# GIF Collection
 
 [[block]]
 | <video autoplay loop>
