@@ -59,24 +59,21 @@ const SCMenu = glamorous.nav(
   })
 );
 
-const SCItem = glamorous.span(
-  {
-    fontFamily: font.title,
-    fontWeight: '700',
-    textDecoration: 'none',
-    fontSize: '2rem',
-    [media.notMobile]: {
-      marginRight: '2rem',
-      fontSize: '1.2rem',
-    },
+const SCItem = glamorous.span({
+  fontFamily: font.title,
+  fontWeight: '700',
+  textDecoration: 'none',
+  fontSize: '2rem',
+  [media.notMobile]: {
+    marginRight: '2rem',
+    fontSize: '1.2rem',
   },
-  (props, theme) => ({
-    '& a': {
-      color: colors.black,
-      textDecoration: 'none',
-    },
-  })
-);
+});
+
+const MenuLink = glamorous(Link)({
+  color: colors.accentDark,
+  textDecoration: 'none',
+});
 
 export class Menu extends Component {
   state = {
@@ -99,16 +96,16 @@ export class Menu extends Component {
         <SCMenu open={isOpen}>
           {menuConfig.map(single => (
             <SCItem key={single.path}>
-              <Link
+              <MenuLink
                 to={single.path}
                 onClick={this.handleClick}
                 exact={single.exact}
                 activeStyle={{
-                  color: '#1BBC9B',
+                  color: colors.accent,
                 }}
               >
                 {single.label}
-              </Link>
+              </MenuLink>
             </SCItem>
           ))}
         </SCMenu>

@@ -38,7 +38,7 @@ css.insert(`
   }
 
   a {
-    color: ${colors.font};
+    color: ${colors.accent};
     text-decoration: underline;
   }
 

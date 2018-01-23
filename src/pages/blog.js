@@ -10,9 +10,7 @@ const PostDate = glamorous.span({
   marginRight: '1rem',
 });
 
-const StyledLink = glamorous(Link)((props, theme) => ({
-  color: colors.black,
-}));
+const StyledLink = glamorous(Link)((props, theme) => ({}));
 
 const BlogPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;

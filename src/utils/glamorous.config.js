@@ -17,8 +17,8 @@ export const font = {
 };
 
 export const colors = {
-  accent: '#79c7b2',
-  accentDark: '#2c3e50',
+  accent: '#fc5c65',
+  accentDark: '#4b6584',
   darkGrey: 'rgb(45,45,45)',
   black: 'rgba(0,0,0,0.85)',
   white: '#FFF',
@@ -31,14 +31,3 @@ export default {
   font,
   colors,
 };
-
-// const sizes = {
-//   large: '50rem',
-// };
-
-// const media = {
-//   large: styles => ``,
-// };
-// // @media (max-width: 700px) {
-// //     background: palevioletred;
-// // }

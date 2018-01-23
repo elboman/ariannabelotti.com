@@ -3,46 +3,46 @@ import Link from 'gatsby-link';
 import glamorous from 'glamorous';
 
 import { ContentWrapper, SocialIcons } from '@components';
-import { media, font } from '@utils';
+import { media, font, colors } from '@utils';
 
 import thankYouGif from '@assets/thankyou.gif';
 
 const ContentInner = glamorous.div({
+  textAlign: 'center',
   [media.desktop]: {
     position: 'absolute',
     top: '50%',
     transform: 'translateY(-50%)',
+    width: '100%',
   },
 });
 
-const Hero = glamorous.div(
-  {
-    fontFamily: font.title,
-    fontSize: '1.5rem',
-    fontWeight: 700,
-    [media.notMobile]: {
-      fontSize: '2.5rem',
-    },
+const Hero = glamorous.div({
+  color: colors.accentDark,
+  fontFamily: font.title,
+  fontSize: '2.35rem',
+  lineHeight: '2.3rem',
+  fontWeight: 700,
+  width: '40rem',
+  margin: '0 auto',
+  maxWidth: '100%',
+  [media.notMobile]: {
+    fontSize: '2.5rem',
   },
-  ({ theme }) => ({
-    color: theme.main.colors.accentDark,
-  })
-);
+});
 
-const Smaller = glamorous.div(
-  {
-    fontFamily: font.body,
-    fontSize: '1.2rem',
-    fontWeight: '400',
-    marginBottom: '2rem',
-    [media.notMobile]: {
-      fontSize: '1.5rem',
-    },
+const Smaller = glamorous.div({
+  color: colors.font,
+  fontFamily: font.body,
+  fontSize: '1.2rem',
+  fontWeight: '400',
+  width: '40rem',
+  margin: '4rem auto',
+  maxWidth: '100%',
+  [media.notMobile]: {
+    fontSize: '1.5rem',
   },
-  ({ theme }) => ({
-    color: theme.main.colors.font,
-  })
-);
+});
 
 const SCSocialIconsContainer = glamorous.div({
   textAlign: 'center',
