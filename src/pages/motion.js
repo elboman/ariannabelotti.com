@@ -33,7 +33,7 @@ const MotionPage = ({ data }) => {
           src: work.frontmatter.coverimage.childImageSharp.responsiveSizes.src,
         };
     return (
-      <Link to={`/motion/${work.frontmatter.slug}`}>
+      <Link to={`/motion/${work.frontmatter.slug}`} key={work.id}>
         <WorkComponent
           key={work.id}
           {...workProps}
@@ -63,6 +63,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
           frontmatter {
             title
             slug

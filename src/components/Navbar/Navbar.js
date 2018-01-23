@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import { Menu } from '@components';
 import { font } from '@utils';
 
-import profilePic from '@assets/arianna-belotti.jpg';
+import profilePic from '@assets/arianna-belotti-small.jpg';
 
 const SCWrapper = glamorous.div({
   margin: '0 auto',
@@ -53,7 +53,7 @@ export const Navbar = ({ menu }) => (
   <SCWrapper>
     <Link to="/works">
       <SCLogo>
-        <img src={profilePic} />
+        <img src={profilePic} alt="Arianna Belotti (ariabba)" />
       </SCLogo>
     </Link>
     <SCMenu>

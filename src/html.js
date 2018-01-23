@@ -24,7 +24,7 @@ module.exports = class HTML extends React.Component {
       );
     }
     return (
-      <html>
+      <html lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
