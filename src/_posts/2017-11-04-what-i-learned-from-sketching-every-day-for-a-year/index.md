@@ -7,6 +7,8 @@ published: true
 
 # What I learned from sketching every day for a year
 
+![Cover image](cover-grey.png)
+
 I believe that **sketching is the most important thing you can do to become an artist**.
 Without strong sketching and drawing skills it’s almost impossible to create professional work.
 Line work can tell a lot about how artists understand the world around them, how accurately they describe light and shadow and how they shape and compose.
@@ -113,3 +115,5 @@ One of those is your subconscious_.
 This has been my experience so far. I'll surely notice new things as I continue and maybe I'll update this post or write a follow up.
 
 What are your experiences? Comments are feedbacks are welcome!
+
+![Some of the daily sketches](sketches.png)
