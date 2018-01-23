@@ -1,7 +1,7 @@
 ---
 title: 'GIF Collection'
 slug: 'gif-collection'
-date: "2015-12-13T08:00:00Z"
+date: "2018-01-23T08:00:00Z"
 published: true
 coverimage: 'nigiri-dress.mp4'
 overlay:
