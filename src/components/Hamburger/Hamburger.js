@@ -1,4 +1,25 @@
 import React from 'react';
+import glamorous from 'glamorous';
+
+import { colors } from '@utils';
+
+const bgColor = {
+  backgroundColor: colors.accentDark,
+};
+
+const activeBgColor = {
+  backgroundColor: colors.accent,
+};
+
+const HamburgerInner = glamorous.div({
+  ...bgColor,
+  ':before': {
+    ...bgColor,
+  },
+  ':after': {
+    ...bgColor,
+  },
+});
 
 import './Hamburger.css';
 
@@ -8,7 +29,7 @@ export const Hamburger = ({ active, ...rest }) => (
     className={`hamburger hamburger--squeeze ${active ? 'is-active' : ''}`}
   >
     <div className="hamburger-box">
-      <div className="hamburger-inner" />
+      <HamburgerInner className="hamburger-inner" />
     </div>
   </div>
 );
