@@ -3,7 +3,7 @@ title: 'Freedom in Thought'
 slug: 'freedom-in-thought'
 date: "2016-12-14T08:00:00Z"
 published: true
-coverimage: 'fit-cover.png'
+coverimage: 'human-settlement-square.mp4'
 overlay:
     title: 'Freedom in Thought'
     role: 'design & animation'
