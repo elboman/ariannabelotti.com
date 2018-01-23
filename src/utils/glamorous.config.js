@@ -24,6 +24,7 @@ export const colors = {
   white: '#FFF',
   font: 'rgba(0,0,0,0.85)',
   lightGrey: '#b1b1b1',
+  grey: '#e9e9e9',
 };
 
 export default {
