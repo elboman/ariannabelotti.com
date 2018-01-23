@@ -35,7 +35,7 @@ exports.onRenderBody = function(_ref, options) {
       key: 'fonts',
       href: link,
       rel: 'stylesheet',
-      async: true,
+      defer: true,
     }),
   ]);
 };
