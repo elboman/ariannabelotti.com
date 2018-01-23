@@ -25,44 +25,32 @@ I designed, illustrated and animated every element for each piece.<br>
 ### GIF Campaign
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-memory.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-memory.mp4" }}
 |
 | Better sleep = Better memory
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-love.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-love.mp4" }}
 |
 | Better sleep = Better love
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-health.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-health.mp4" }}
 |
 | Better sleep = Better shape
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-skin.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-skin.mp4" }}
 |
 | Better Sleep = Healthier Skin
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-work.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-work.mp4" }}
 |
 | Better Sleep = Better productivity
 
 [[block]]
-| <video autoplay loop>
-| <source src="better-yoga.mp4" type="video/mp4">
-| </video>
+| {{ Video url="better-yoga.mp4" }}
 |
 | Better Sleep = Better concentration
 

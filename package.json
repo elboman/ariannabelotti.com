@@ -30,7 +30,8 @@
     "lodash": "^4.17.4",
     "react-helmet": "^5.2.0",
     "react-social-icons": "^2.8.0",
-    "react-typekit": "^1.1.2"
+    "react-typekit": "^1.1.2",
+    "remark-shortcodes": "^0.1.4"
   },
   "keywords": [
     "gatsby"

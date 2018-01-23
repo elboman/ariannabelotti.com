@@ -1,0 +1,6 @@
+{
+  "name": "gatsby-remark-shortcodes",
+  "version": "1.0.0",
+  "description": "Gatsby remark plugin for adding shortcodes in markdown",
+  "main": "index.js"
+}

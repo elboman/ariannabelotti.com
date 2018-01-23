@@ -10,7 +10,7 @@ const Video = glamorous.video({
 
 export const VideoWork = ({ url, overlay: { title, role } }) => (
   <WorkWrapper>
-    <Video autoPlay loop>
+    <Video autoPlay loop playsInline muted>
       <source src={url} type="video/mp4" />
     </Video>
     <WorkInfo title={title} description={role} />

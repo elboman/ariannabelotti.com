@@ -28,7 +28,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-copy-linked-files',
           'gatsby-remark-emoji',
           'gatsby-remark-external-links',
           {
@@ -49,6 +48,16 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: 'gatsby-remark-shortcodes',
+            options: {
+              shortcodes: {
+                startBlock: '{{',
+                endBlock: '}}',
+              },
+            },
+          },
+          'gatsby-remark-copy-linked-files',
         ],
       },
     },

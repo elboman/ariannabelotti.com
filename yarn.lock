@@ -8178,6 +8178,10 @@ remark-retext@^3.1.0:
   dependencies:
     mdast-util-to-nlcst "^3.2.0"
 
+remark-shortcodes@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/remark-shortcodes/-/remark-shortcodes-0.1.4.tgz#b0be97d7db7c89f869d9f483b26cb38998b88506"
+
 remark-stringify@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-1.1.0.tgz#a7105e25b9ee2bf9a49b75d2c423f11b06ae2092"

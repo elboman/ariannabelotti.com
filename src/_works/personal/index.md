@@ -12,41 +12,25 @@ overlay:
 # GIF Collection
 
 [[block]]
-| <video autoplay loop>
-| <source src="gangsta.mp4" type="video/mp4">
-| </video>
+| {{ Video url="gangsta.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="catfly-square.mp4" type="video/mp4">
-| </video>
+| {{ Video url="catfly-square.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="flying-squirrel.mp4" type="video/mp4">
-| </video>
+| {{ Video url="flying-squirrel.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="marghe.mp4" type="video/mp4">
-| </video>
+| {{ Video url="marghe.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="nigiri-dress.mp4" type="video/mp4">
-| </video>
+| {{ Video url="nigiri-dress.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="spacedog-square.mp4" type="video/mp4">
-| </video>
+| {{ Video url="spacedog-square.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="valentine.mp4" type="video/mp4">
-| </video>
+| {{ Video url="valentine.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="worm.mp4" type="video/mp4">
-| </video>
+| {{ Video url="worm.mp4" }}

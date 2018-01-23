@@ -22,19 +22,13 @@ I designed, illustrated and animated a 2-part video based on the essay: <em>Why 
 ### Some shots
 
 [[block]]
-| <video autoplay loop>
-| <source src="human-settlement.mp4" type="video/mp4">
-| </video>
+| {{ Video url="human-settlement.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="student-ranking.mp4" type="video/mp4">
-| </video>
+| {{ Video url="student-ranking.mp4" }}
 
 [[block]]
-| <video autoplay loop>
-| <source src="gif-planets-dribbble.mp4" type="video/mp4">
-| </video>
+| {{ Video url="gif-planets-dribbble.mp4" }}
 
 ### Full videos
 
