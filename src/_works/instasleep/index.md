@@ -57,7 +57,11 @@ I designed, illustrated and animated every element for each piece.<br>
 ### Video Campaign
 
 [[block]]
-| <div class="video-square-wrapper"><div class="video-square"><iframe src="https://player.vimeo.com/video/175238590?color=1bbc9b&title=0&byline=0&portrait=0" width="640" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
+| <div class="video-square-wrapper"><div class="video-square">
+|
+| {{ Vimeo id="175238590" }}
+|
+|</div></div>
 
 [[video]]
-| <iframe src="https://player.vimeo.com/video/242565251?color=1bbc9b&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+| {{ Vimeo id="242565251" }}
