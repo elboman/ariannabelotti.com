@@ -10,7 +10,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-glamor`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-gfonts`,
       options: {
         fonts: [`Spectral:300,300i,400,400i,700`],
       },
