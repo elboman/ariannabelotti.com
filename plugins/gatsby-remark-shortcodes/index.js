@@ -8,16 +8,7 @@ module.exports = ({ markdownAST }, options = {}) => {
   visit(markdownAST, 'shortcode', node => {
     let type = node.identifier;
     let attrs = node.attributes;
-
-    let content = '';
-
-    switch (type) {
-      case 'Video': {
-        content = `<video autoplay loop muted playsinline>
-          <source src="${attrs.url}" type="video/mp4">
-        </video>`;
-      }
-    }
+    let content = transformContent(type, attrs);
 
     node.type = 'html';
     node.value = content;
@@ -30,3 +21,19 @@ module.exports.setParserPlugins = options => {
   }
   return [[shortcodes, options.shortcodes]];
 };
+
+function transformContent(type, attrs) {
+  switch (type) {
+    case 'Video': {
+      return `<video autoplay loop muted playsinline>
+        <source src="${attrs.url}" type="video/mp4">
+      </video>`;
+    }
+
+    case 'Vimeo': {
+      return `<iframe src="https://player.vimeo.com/video/${
+        attrs.id
+      }?color=1bbc9b&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`;
+    }
+  }
+}
