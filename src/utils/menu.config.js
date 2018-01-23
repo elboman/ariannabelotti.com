@@ -1,7 +1,7 @@
 export const menuConfig = [
   {
-    label: 'Works',
-    path: '/works',
+    label: 'Motion',
+    path: '/motion',
     exact: false,
   },
   {

@@ -65,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/_works`,
-        name: 'works',
+        path: `${__dirname}/src/_motion`,
+        name: 'motion',
       },
     },
     {
@@ -80,6 +80,7 @@ module.exports = {
       resolve: `gatsby-works-files`,
       options: {
         allowedExtensions: ['mp4'],
+        instanceNames: ['motion'],
       },
     },
     'gatsby-remark-source-instance',

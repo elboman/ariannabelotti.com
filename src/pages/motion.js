@@ -15,7 +15,7 @@ const GridWrapper = glamorous.div({
   },
 });
 
-const WorksPage = ({ data }) => {
+const MotionPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
   const works = edges.map(single => single.node);
 
@@ -33,7 +33,7 @@ const WorksPage = ({ data }) => {
           src: work.frontmatter.coverimage.childImageSharp.responsiveSizes.src,
         };
     return (
-      <Link to={`/works/${work.frontmatter.slug}`}>
+      <Link to={`/motion/${work.frontmatter.slug}`}>
         <WorkComponent
           key={work.id}
           {...workProps}
@@ -50,14 +50,14 @@ const WorksPage = ({ data }) => {
   );
 };
 
-export default WorksPage;
+export default MotionPage;
 
 export const query = graphql`
-  query WorksQuery {
+  query MotionQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
-        fields: { sourceInstanceName: { eq: "works" } }
+        fields: { sourceInstanceName: { eq: "motion" } }
         frontmatter: { published: { eq: true } }
       }
     ) {

@@ -32,12 +32,16 @@ const getAbsolutePath = (parentNode, file) => {
 
 exports.onCreateNode = ({ node, boundActionCreators }, pluginOptions = {}) => {
   const { createNodeField } = boundActionCreators;
-  const { destinationDir, allowedExtensions = [] } = pluginOptions;
+  const {
+    destinationDir,
+    allowedExtensions = [],
+    instanceNames = [],
+  } = pluginOptions;
 
   const filesToCopy = new Map();
   if (
-    node.sourceInstanceName === 'works' &&
     node.internal.type === 'File' &&
+    instanceNames.includes(node.sourceInstanceName) &&
     allowedExtensions.includes(node.extension)
   ) {
     const linkURL = newLinkURL(node, destinationDir);

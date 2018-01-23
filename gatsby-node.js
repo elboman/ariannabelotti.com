@@ -19,7 +19,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     fromPath: `/`,
     isPermanent: false,
     redirectInBrowser: true,
-    toPath: `/works`,
+    toPath: `/motion`,
   });
 
   // Pages
@@ -58,8 +58,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const blogPosts = result.data.allMarkdownRemark.edges.filter(
       single => single.node.fields.sourceInstanceName === 'blog'
     );
-    const works = result.data.allMarkdownRemark.edges.filter(
-      single => single.node.fields.sourceInstanceName === 'works'
+    const motion = result.data.allMarkdownRemark.edges.filter(
+      single => single.node.fields.sourceInstanceName === 'motion'
     );
 
     blogPosts.forEach(({ node }) => {
@@ -72,9 +72,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
     });
 
-    works.forEach(({ node }) => {
+    motion.forEach(({ node }) => {
       createPage({
-        path: `/works/${node.frontmatter.slug}`,
+        path: `/motion/${node.frontmatter.slug}`,
         component: WorkTemplate,
         context: {
           slug: node.frontmatter.slug,
