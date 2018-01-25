@@ -110,10 +110,8 @@ Sometimes looking at my warmups I find something worth following up and further 
 _Creativity isn't just a switch you can turn on, several factors come into play.
 One of those is your subconscious_.
 
----
+![Some of the daily sketches](sketches.png)
 
 This has been my experience so far. I'll surely notice new things as I continue and maybe I'll update this post or write a follow up.
 
 What are your experiences? Comments are feedbacks are welcome!
-
-![Some of the daily sketches](sketches.png)

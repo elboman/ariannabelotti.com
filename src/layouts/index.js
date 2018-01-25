@@ -32,7 +32,7 @@ css.insert(`
 
   h1,h2,h3,h4,h5,h6 {
     line-height: 1.1;
-    color: ${colors.black};
+    color: ${colors.accentDark};
     margin: 4rem 0 2rem;
     font-family: 'europa', sans-serif;
   }
