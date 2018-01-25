@@ -4,16 +4,7 @@ import glamorous, { Video } from 'glamorous';
 import _get from 'lodash/get';
 
 import { media, font } from '@utils';
-import { ContentWrapper, VideoWork, ImageWork } from '@components';
-
-const GridWrapper = glamorous.div({
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))',
-  gridGap: '2rem',
-  [media.desktop]: {
-    gridGap: '1rem',
-  },
-});
+import { ContentWrapper, GridWrapper, VideoWork, ImageWork } from '@components';
 
 const MotionPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
