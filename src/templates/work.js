@@ -9,6 +9,9 @@ const Content = glamorous.div({
   '& h1': {
     marginBottom: '2.45rem',
   },
+  '& h1 + h3': {
+    marginTop: '-2rem',
+  },
 });
 
 export default function Template({ data }) {

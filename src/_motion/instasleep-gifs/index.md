@@ -1,11 +1,11 @@
 ---
-title: 'InstaSleep'
-slug: 'instasleep'
+title: 'InstaSleep GIFs'
+slug: 'instasleep-gifs'
 date: "2016-12-14T08:00:00Z"
 published: true
 coverimage: 'better-love.mp4'
 overlay:
-    title: 'Instasleep'
+    title: 'Instasleep GIFs'
     role: 'design & animation'
 ---
 
@@ -53,15 +53,3 @@ I designed, illustrated and animated every element for each piece.<br>
 | {{ Video url="better-yoga.mp4" }}
 |
 | Better Sleep = Better concentration
-
-### Video Campaign
-
-[[block]]
-| <div class="video-square-wrapper"><div class="video-square">
-|
-| {{ Vimeo id="175238590" }}
-|
-|</div></div>
-
-[[video]]
-| {{ Vimeo id="242565251" }}
