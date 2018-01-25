@@ -22,6 +22,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     toPath: `/motion`,
   });
 
+  createRedirect({
+    fromPath: `/works`,
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: `/motion`,
+  });
+
   // Pages
 
   const BlogPostTemplate = path.resolve(`src/templates/blog-post.js`);
