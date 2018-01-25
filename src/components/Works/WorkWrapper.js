@@ -77,11 +77,15 @@ export const WorkInfoWrapper = glamorous.div({
 export const WorkTitle = glamorous.h3({
   fontSize: '1.2rem',
   margin: '0 0 0.2rem 0',
+  color: colors.white,
+  fontStyle: 'initial',
 });
 
 export const WorkDescription = glamorous.p({
   fontSize: '1rem',
   margin: 0,
+  color: colors.white,
+  fontStyle: 'italic',
 });
 
 export const WorkInfo = ({ title, description }) => (
