@@ -33,9 +33,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 864,
+              maxWidth: 2000,
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
+              quality: 100,
             },
           },
           {
@@ -72,6 +73,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/_art`,
+        name: 'art',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/_posts`,
         name: 'blog',
       },
@@ -80,7 +88,7 @@ module.exports = {
       resolve: `gatsby-works-files`,
       options: {
         allowedExtensions: ['mp4'],
-        instanceNames: ['motion'],
+        instanceNames: ['motion', 'art'],
       },
     },
     'gatsby-remark-source-instance',

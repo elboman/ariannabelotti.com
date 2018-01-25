@@ -61,6 +61,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const motion = result.data.allMarkdownRemark.edges.filter(
       single => single.node.fields.sourceInstanceName === 'motion'
     );
+    const art = result.data.allMarkdownRemark.edges.filter(
+      single => single.node.fields.sourceInstanceName === 'art'
+    );
 
     blogPosts.forEach(({ node }) => {
       createPage({
@@ -75,6 +78,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     motion.forEach(({ node }) => {
       createPage({
         path: `/motion/${node.frontmatter.slug}`,
+        component: WorkTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      });
+    });
+
+    art.forEach(({ node }) => {
+      createPage({
+        path: `/art/${node.frontmatter.slug}`,
         component: WorkTemplate,
         context: {
           slug: node.frontmatter.slug,

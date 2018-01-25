@@ -1,5 +1,10 @@
 export const menuConfig = [
   {
+    label: 'Art',
+    path: '/art',
+    exact: false,
+  },
+  {
     label: 'Motion',
     path: '/motion',
     exact: false,
