@@ -1,7 +1,7 @@
 ---
 title: 'Titans'
 slug: 'titans'
-date: "2018-01-22T08:00:00Z"
+date: "2018-01-20T08:00:00Z"
 published: true
 coverimage: 'cover.jpg'
 overlay:
