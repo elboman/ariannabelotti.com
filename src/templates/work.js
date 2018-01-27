@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import glamorous from 'glamorous';
+import _get from 'lodash/get';
 
 import { ContentPadding, SharingMetadata } from '@components';
 
@@ -16,8 +17,11 @@ const Content = glamorous.div({
 
 export default function Template({ data, ...props }) {
   const { markdownRemark: post } = data;
-  const coverImage =
-    post.frontmatter.coverimage.childImageSharp.responsiveSizes.src;
+  const coverImage = _get(
+    post,
+    'frontmatter.coverimage.childImageSharp.responsiveSizes.src',
+    ''
+  );
   const pageUrl = `https://ariannabelotti.com${props.location.pathname}`;
   const title = `${post.frontmatter.title} - Arianna Belotti`;
   return (
