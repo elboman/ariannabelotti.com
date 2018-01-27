@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import glamorous from 'glamorous';
 
-import { ContentPadding } from '@components';
+import { ContentPadding, SharingMetadata } from '@components';
 
 const Content = glamorous.div({
   textAlign: 'center',
@@ -14,11 +14,16 @@ const Content = glamorous.div({
   },
 });
 
-export default function Template({ data }) {
+export default function Template({ data, ...props }) {
   const { markdownRemark: post } = data;
+  const coverImage =
+    post.frontmatter.coverimage.childImageSharp.responsiveSizes.src;
+  const pageUrl = `https://ariannabelotti.com${props.location.pathname}`;
+  const title = `${post.frontmatter.title} - Arianna Belotti`;
   return (
     <ContentPadding>
-      <Helmet title={`${post.frontmatter.title} - Arianna Belotti`} />
+      <Helmet title={title} />
+      <SharingMetadata title={title} imgUrl={coverImage} url={pageUrl} />
       <Content
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: post.html }}
@@ -35,6 +40,16 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        coverimage {
+          fields {
+            publicUrl
+          }
+          childImageSharp {
+            responsiveSizes {
+              src
+            }
+          }
+        }
       }
     }
   }
