@@ -19,3 +19,7 @@ overlay:
 
 [[block]]
 | ![Environment study 2](env-study-2-presentation.jpg)
+
+<!--
+[[block]]
+| ![Mermaid detail](zoom.jpg) -->
