@@ -8,3 +8,4 @@ export * from './Works';
 export * from './ContentWrapper';
 export * from './Favicons';
 export * from './SharingMetadata';
+export * from './Footer';

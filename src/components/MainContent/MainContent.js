@@ -8,7 +8,6 @@ const Wrapper = glamorous.div({
   margin: '0 auto',
   padding: '1rem 1.5rem',
   boxSizing: 'border-box',
-  height: '100%',
   zIndex: '1',
   position: 'relative',
   [media.notMobile]: {

@@ -10,9 +10,6 @@ import thankYouGif from '@assets/thankyou.gif';
 const ContentInner = glamorous.div({
   textAlign: 'center',
   [media.desktop]: {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
     width: '100%',
   },
 });
@@ -37,21 +34,11 @@ const Smaller = glamorous.div({
   fontSize: '1.2rem',
   fontWeight: '400',
   width: '40rem',
-  margin: '4rem auto',
+  margin: '4rem auto 0',
   maxWidth: '100%',
   [media.notMobile]: {
     fontSize: '1.5rem',
   },
-});
-
-const SCSocialIconsContainer = glamorous.div({
-  textAlign: 'center',
-  marginBottom: '2rem',
-});
-
-const SCGifWrapper = glamorous.div({
-  width: '16rem',
-  margin: '0 auto',
 });
 
 const MailLink = glamorous.a();
@@ -79,9 +66,6 @@ const AboutPage = () => (
           or you can find me on social networks.
         </p>
       </Smaller>
-      <SCSocialIconsContainer>
-        <SocialIcons />
-      </SCSocialIconsContainer>
     </ContentInner>
   </ContentWrapper>
 );

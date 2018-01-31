@@ -27,9 +27,9 @@ const Wrapper = glamorous.div({
   position: 'relative',
   display: 'inline-block',
   '& .social-icon': {
-    width: '2rem !important',
-    height: '2rem !important',
-    marginLeft: '1rem',
+    width: '1.5rem !important',
+    height: '1.5rem !important',
+    margin: '0.7rem 0.5rem',
     transition: 'transform 0.2s ease',
     ':hover': {
       transform: 'scale(1.2)',
