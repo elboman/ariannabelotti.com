@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import ReactDisqusThread from 'react-disqus-thread';
 
-import { ContentPadding, SharingMetadata } from '@components';
+import { ContentPadding, SharingMetadata, DisqusWrapper } from '@components';
 
 export default function Template({ data, ...props }) {
   const { markdownRemark: post } = data;
@@ -16,6 +17,14 @@ export default function Template({ data, ...props }) {
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
+      <DisqusWrapper>
+        <ReactDisqusThread
+          shortname="ariannabelotti"
+          identifier={`ariannabelotti-${post.frontmatter.slug}`}
+          title={post.frontmatter.title}
+          url={pageUrl}
+        />
+      </DisqusWrapper>
     </ContentPadding>
   );
 }

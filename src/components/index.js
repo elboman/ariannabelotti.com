@@ -4,6 +4,7 @@ export * from './Menu/Menu';
 export * from './Navbar/Navbar';
 export * from './SocialIcons/SocialIcons';
 export * from './ContentPadding';
+export * from './DisqusWrapper';
 export * from './Works';
 export * from './ContentWrapper';
 export * from './Favicons';
