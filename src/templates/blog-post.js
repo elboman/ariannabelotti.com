@@ -11,6 +11,7 @@ export default function Template({ data, ...props }) {
     <ContentPadding>
       <Helmet title={title} />
       <SharingMetadata title={title} description={post.excerpt} url={pageUrl} />
+      <h1>{post.frontmatter.title}</h1>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: post.html }}

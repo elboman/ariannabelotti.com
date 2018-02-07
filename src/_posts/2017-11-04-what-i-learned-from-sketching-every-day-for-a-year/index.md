@@ -5,8 +5,6 @@ title: "What I learned from sketching every day for a year"
 published: true
 ---
 
-# What I learned from sketching every day for a year
-
 ![Cover image](cover-grey.png)
 
 I believe that **sketching is the most important thing you can do to become an artist**.

@@ -5,8 +5,6 @@ title: "Challenge yourself as an artist"
 published: true
 ---
 
-# Challenge yourself as an artist
-
 ![Cover image](cover.png)
 
 I spent all my high school and university years drawing on every piece of paper I could find. I was the kind of student always doodling on every note and books’ corner. During classes and at home.
