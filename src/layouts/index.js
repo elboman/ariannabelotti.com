@@ -109,9 +109,14 @@ const TemplateWrapper = ({ children }) => (
         meta={[
           {
             name: 'description',
-            content: 'Arianna Belotti personal portfolio',
+            content:
+              'Motion Graphic Designer & Concept Artist based in London, UK.',
           },
-          { name: 'keywords', content: 'sample, something' },
+          {
+            name: 'keywords',
+            content:
+              'drawing, concept art, digital painting, motion graphics, motion, art, game art, game design, game concept',
+          },
         ]}
       />
       <Favicons />
