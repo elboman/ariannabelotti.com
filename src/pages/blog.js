@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import glamorous from 'glamorous';
 import { format } from 'date-fns';
 
-import { ContentPadding } from '@components';
+import { MainContainer, ContentPadding } from '@components';
 import { colors } from '@utils';
 
 const PostDate = glamorous.span({
@@ -16,17 +16,21 @@ const BlogPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
   const posts = edges.map(single => single.node);
   return (
-    <ContentPadding>
-      <h1>Blog</h1>
-      {posts.map(({ frontmatter }) => (
-        <div key={frontmatter.slug}>
-          <PostDate>{format(new Date(frontmatter.date), 'DD/MM/YY')}</PostDate>
-          <StyledLink to={`/blog/${frontmatter.slug}`}>
-            <span>{frontmatter.title}</span>
-          </StyledLink>
-        </div>
-      ))}
-    </ContentPadding>
+    <MainContainer>
+      <ContentPadding>
+        <h1>Blog</h1>
+        {posts.map(({ frontmatter }) => (
+          <div key={frontmatter.slug}>
+            <PostDate>
+              {format(new Date(frontmatter.date), 'DD/MM/YY')}
+            </PostDate>
+            <StyledLink to={`/blog/${frontmatter.slug}`}>
+              <span>{frontmatter.title}</span>
+            </StyledLink>
+          </div>
+        ))}
+      </ContentPadding>
+    </MainContainer>
   );
 };
 

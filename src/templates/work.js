@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import glamorous from 'glamorous';
 import _get from 'lodash/get';
 
-import { ContentPadding, SharingMetadata } from '@components';
+import { ContentPadding, MainContainer, SharingMetadata } from '@components';
 
 const Content = glamorous.div({
   textAlign: 'center',
@@ -25,14 +25,16 @@ export default function Template({ data, ...props }) {
   const pageUrl = `https://ariannabelotti.com${props.location.pathname}`;
   const title = `${post.frontmatter.title} - Arianna Belotti`;
   return (
-    <ContentPadding>
-      <Helmet title={title} />
-      <SharingMetadata title={title} imgUrl={coverImage} url={pageUrl} />
-      <Content
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-    </ContentPadding>
+    <MainContainer>
+      <ContentPadding>
+        <Helmet title={title} />
+        <SharingMetadata title={title} imgUrl={coverImage} url={pageUrl} />
+        <Content
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </ContentPadding>
+    </MainContainer>
   );
 }
 

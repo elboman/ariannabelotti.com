@@ -4,9 +4,11 @@ import glamorous from 'glamorous';
 import { media } from '@utils';
 
 const WithPaddingTop = glamorous.div({
-  padding: '3rem 1rem 0',
+  backgroundColor: '#f2f2f2',
+  padding: '1rem 1rem 0.5rem',
+  margin: '0 0 1rem',
   [media.desktop]: {
-    padding: '3rem 6rem 0',
+    padding: '1rem 6rem 0',
   },
 });
 

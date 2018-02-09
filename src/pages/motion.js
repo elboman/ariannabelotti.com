@@ -4,7 +4,13 @@ import glamorous, { Video } from 'glamorous';
 import _get from 'lodash/get';
 
 import { media, font } from '@utils';
-import { ContentWrapper, GridWrapper, VideoWork, ImageWork } from '@components';
+import {
+  MainContainer,
+  ContentWrapper,
+  GridWrapper,
+  VideoWork,
+  ImageWork,
+} from '@components';
 
 const MotionPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
@@ -35,9 +41,11 @@ const MotionPage = ({ data }) => {
   });
 
   return (
-    <ContentWrapper>
-      <GridWrapper>{allWorks}</GridWrapper>
-    </ContentWrapper>
+    <MainContainer>
+      <ContentWrapper>
+        <GridWrapper>{allWorks}</GridWrapper>
+      </ContentWrapper>
+    </MainContainer>
   );
 };
 
