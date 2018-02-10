@@ -15,6 +15,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   // Redirects
 
+  // special redirect for homepage
   createRedirect({
     fromPath: `/`,
     isPermanent: false,
@@ -22,11 +23,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     toPath: `/motion`,
   });
 
-  createRedirect({
-    fromPath: `/works`,
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: `/motion`,
+  // permanent redirects
+  const permanentRedirects = {
+    '/works': '/motion',
+    '/works/gif-collection': '/motion/gif-collection',
+    '/works/freedom-in-thought': '/motion/freedom-in-thought-part1',
+    '/motion/freedom-in-thought': '/motion/freedom-in-thought-part1',
+  };
+
+  Object.keys(permanentRedirects).forEach(from => {
+    const to = permanentRedirects[from];
+    createRedirect({
+      fromPath: from,
+      isPermanent: true,
+      redirectInBrowser: true,
+      toPath: to,
+    });
   });
 
   // Pages
