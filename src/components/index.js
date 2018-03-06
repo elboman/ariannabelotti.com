@@ -10,3 +10,5 @@ export * from './ContentWrapper';
 export * from './Favicons';
 export * from './SharingMetadata';
 export * from './Footer';
+export * from './WithZoomableImages';
+export * from './PhotoswipeGallery';

@@ -5,7 +5,7 @@ import { ThemeProvider } from 'glamorous';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
-import { Navbar, MainContent, Footer, Favicons } from '@components';
+import { Navbar, MainContent, Footer, Favicons, PhotoswipeGallery } from '@components';
 
 import { colors } from '@utils';
 
@@ -125,6 +125,7 @@ const TemplateWrapper = ({ children }) => (
         {children()}
         <Footer />
       </MainContent>
+      <PhotoswipeGallery />
     </div>
   </ThemeProvider>
 );

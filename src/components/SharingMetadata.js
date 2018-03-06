@@ -8,7 +8,6 @@ export const SharingMetadata = ({
   description = 'Arianna Belotti portfolio',
   ...rest
 }) => {
-  console.log(rest);
   return (
     <Helmet>
       <meta property="og:url" content={url} />

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import glamorous from 'glamorous';
 import _get from 'lodash/get';
 
-import { ContentPadding, MainContainer, SharingMetadata } from '@components';
+import { ContentPadding, MainContainer, SharingMetadata, WithZoomableImages } from '@components';
 
 const Content = glamorous.div({
   textAlign: 'center',
@@ -29,10 +29,12 @@ export default function Template({ data, ...props }) {
       <ContentPadding>
         <Helmet title={title} />
         <SharingMetadata title={title} imgUrl={coverImage} url={pageUrl} />
-        <Content
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <WithZoomableImages>
+          <Content
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </WithZoomableImages>
       </ContentPadding>
     </MainContainer>
   );
