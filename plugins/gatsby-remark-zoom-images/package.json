@@ -1,0 +1,6 @@
+{
+  "name": "gatsby-remark-zoom-images",
+  "version": "1.0.0",
+  "description": "Gatsby remark plugin for adding a zoom effect to image",
+  "main": "index.js"
+}

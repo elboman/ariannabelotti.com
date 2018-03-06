@@ -31,7 +31,7 @@ module.exports = {
           'gatsby-remark-emoji',
           'gatsby-remark-external-links',
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-zoom-images`,
             options: {
               maxWidth: 2000,
               linkImagesToOriginal: false,
