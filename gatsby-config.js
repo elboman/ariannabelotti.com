@@ -19,6 +19,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-71636045-3',
+        anonymize: true,
+        respectDNT: true,
       },
     },
     // Transformers
