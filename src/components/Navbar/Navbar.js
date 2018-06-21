@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import { Menu } from '@components';
 import { font } from '@utils';
 
-import profilePic from '@assets/arianna-belotti-small.jpg';
+import profilePic from '@assets/aribe.jpg';
 
 const SCWrapper = glamorous.div({
   margin: '0 auto',
