@@ -51,7 +51,7 @@ const SCMenuItem = glamorous.div({
 
 export const Navbar = ({ menu }) => (
   <SCWrapper>
-    <Link to="/motion">
+    <Link to="/">
       <SCLogo>
         <img src={profilePic} alt="Arianna Belotti (ariabba)" />
       </SCLogo>
