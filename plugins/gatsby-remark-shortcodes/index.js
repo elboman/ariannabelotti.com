@@ -30,6 +30,12 @@ function transformContent(type, attrs) {
       </video>`;
     }
 
+    case 'VideoNoAutoplay': {
+      return `<video controls loop muted playsinline>
+        <source src="${attrs.url}" type="video/mp4">
+      </video>`;
+    }
+
     case 'Vimeo': {
       return `<iframe src="https://player.vimeo.com/video/${
         attrs.id
