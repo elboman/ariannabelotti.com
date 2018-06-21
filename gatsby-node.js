@@ -20,7 +20,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     fromPath: `/`,
     isPermanent: false,
     redirectInBrowser: true,
-    toPath: `/motion`,
+    toPath: `/art`,
   });
 
   // permanent redirects
