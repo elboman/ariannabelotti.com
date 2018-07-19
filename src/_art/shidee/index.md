@@ -13,3 +13,6 @@ overlay:
 
 [[block]]
 | ![The kid](the-kid.jpg)
+
+[[block]]
+| ![The wolf](the-wolf.jpg)
