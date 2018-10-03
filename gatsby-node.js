@@ -29,6 +29,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     '/works/gif-collection': '/motion/gif-collection',
     '/works/freedom-in-thought': '/motion/freedom-in-thought-part1',
     '/motion/freedom-in-thought': '/motion/freedom-in-thought-part1',
+    '/art/inktober-2017': '/art/sketchbook',
   };
 
   Object.keys(permanentRedirects).forEach(from => {
