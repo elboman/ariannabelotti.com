@@ -30,6 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     '/works/freedom-in-thought': '/motion/freedom-in-thought-part1',
     '/motion/freedom-in-thought': '/motion/freedom-in-thought-part1',
     '/art/samurai-dojo': '/art/hato',
+    '/art/western-stories': '/art/shidee-rpg-game',
     '/art/inktober-2017': '/art/sketchbook',
   };
 
