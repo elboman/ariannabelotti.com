@@ -18,6 +18,8 @@ overlay:
 <br>
 I designed, illustrated and animated a 2-part video based on the essay: <em>Why is the School System Failing? The Future of Education</em><br>
 <br>
+<a href="https://www.youtube.com/channel/UCd6Za0CXVldhY8fK8eYoIuw">YouTube Channel</a>
+<br>
 <a href="https://www.freedominthought.com/">freedominthought.com</a>
 </p>
 
