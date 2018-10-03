@@ -48,16 +48,20 @@ const AboutPage = () => (
     <ContentInner>
       <Hero>
         <p>
-          Hi! I'm Arianna, a Motion Graphic Designer &amp; Concept Artist
+          Hi, I'm Arianna Belotti, illustrator, concept artist, animator
           currently based in London, UK.
         </p>
       </Hero>
       <Smaller>
         <p>
-          My skills include conceptualizing characters, props, and environments.
-          I also work on 2D motion graphics and animation in general.
+          I work with amazing people to bring projects to life through concept
+          design and art direction (check out{' '}
+          <Link to="/art/shidee-rpg-game">Shidee</Link> and{' '}
+          <Link to="/motion/freedom-in-thought">Freedom in Thought</Link>). I
+          work remotly with clients around the world, in particular US, Canada,
+          UK and Italy.
         </p>
-        <p>Have an interesting project?</p>
+        <p>My main passions are 🕹, 🎥 and driking a lot of 🍵.</p>
         <p>
           Drop me at line at{' '}
           <MailLink href="mailto:hello@ariannabelotti.com">
