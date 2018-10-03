@@ -5,7 +5,7 @@ export const SharingMetadata = ({
   imgUrl = '/arianna-belotti.jpg',
   url = '',
   title = '',
-  description = 'Arianna Belotti portfolio',
+  description = 'I work with amazing people to bring projects to life through concept design and art direction. I work remotly with clients around the world, in particular US, Canada, UK and Italy.',
   ...rest
 }) => {
   return (
