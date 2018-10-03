@@ -11,5 +11,10 @@ overlay:
 
 # Tiny Dragon
 
+<p class="work-description"> My submission for the art book "Tiny Dragons" by ArtOrder. </p>
+
 [[block]]
 | ![Tiny Dragon](tiny-dragon.jpg)
+
+[[block]]
+| ![Tiny Dragon detail](cover.jpg)
