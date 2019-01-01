@@ -2,7 +2,7 @@
 title: 'FFIX Fan Art'
 slug: 'ffix-fan-art'
 date: "2018-01-16T08:00:00Z"
-published: true
+published: false
 coverimage: 'cover.jpg'
 overlay:
     title: 'FFIX Fan Art'
