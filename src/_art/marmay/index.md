@@ -2,7 +2,7 @@
 title: 'Marmay'
 slug: 'marmay'
 date: "2018-05-01T08:00:00Z"
-published: true
+published: false
 coverimage: 'cover.jpg'
 overlay:
     title: 'Marmay'

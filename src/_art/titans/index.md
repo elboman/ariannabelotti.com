@@ -2,7 +2,7 @@
 title: 'Titans'
 slug: 'titans'
 date: "2018-01-20T08:00:00Z"
-published: true
+published: false
 coverimage: 'cover.jpg'
 overlay:
     title: 'Titans'
