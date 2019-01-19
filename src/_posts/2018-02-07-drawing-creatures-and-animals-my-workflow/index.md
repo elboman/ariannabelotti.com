@@ -2,6 +2,7 @@
 slug: "drawing-creatures-and-animals-my-workflow"
 date: "2018-02-07T08:00:00Z"
 title: "Drawing creatures and animals: my workflow"
+coverimage: '01-cover.jpg'
 published: true
 ---
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import _get from 'lodash/get';
 import ReactDisqusThread from 'react-disqus-thread';
 
 import {
@@ -13,6 +14,11 @@ export default function Template({ data, ...props }) {
   const { markdownRemark: post } = data;
   const title = `${post.frontmatter.title} - Arianna Belotti`;
   const pageUrl = `https://ariannabelotti.com${props.location.pathname}`;
+  const coverImage = _get(
+    post,
+    'frontmatter.coverimage.childImageSharp.responsiveSizes.src',
+    ''
+  );
   return (
     <div>
       <MainContainer>
@@ -22,6 +28,7 @@ export default function Template({ data, ...props }) {
             title={title}
             description={post.excerpt}
             url={pageUrl}
+            imgUrl={coverImage}
           />
           <h1>{post.frontmatter.title}</h1>
           <div
@@ -53,6 +60,16 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        coverimage {
+          fields {
+            publicUrl
+          }
+          childImageSharp {
+            responsiveSizes {
+              src
+            }
+          }
+        }
       }
     }
   }

@@ -2,6 +2,7 @@
 slug: "challenge-yourself-as-an-artist"
 date: "2016-12-14T08:00:00Z"
 title: "Challenge yourself as an artist"
+coverimage: 'cover.png'
 published: true
 ---
 

@@ -2,6 +2,7 @@
 slug: "how-to-get-started-at-drawing"
 date: "2019-01-19T08:00:00Z"
 title: "How to get started at drawing"
+coverimage: 'cover.jpg'
 published: true
 ---
 

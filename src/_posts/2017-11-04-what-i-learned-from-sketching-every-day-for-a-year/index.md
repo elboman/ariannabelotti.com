@@ -2,6 +2,7 @@
 slug: "what-i-learned-from-sketching-every-day-for-a-year"
 date: "2017-11-04T08:00:00Z"
 title: "What I learned from sketching every day for a year"
+coverimage: 'cover-grey.png'
 published: true
 ---
 
