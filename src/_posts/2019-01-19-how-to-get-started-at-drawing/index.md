@@ -5,6 +5,8 @@ title: "How to get started at drawing"
 published: true
 ---
 
+![Cover image](cover.jpg)
+
 These last few days I received some requests on **how to get started at drawing** and illustrating and it brought me back to years ago, when I made my first sketches. I was really enjoying it, but I felt that my characters suffered from some problems and I didn't know how to fix them.
 
 I now understand that I was looking at wrong things and I needed to see them from a different perspective. This is centenly something you learn with experience, but it seems so obvious in hindsight.
