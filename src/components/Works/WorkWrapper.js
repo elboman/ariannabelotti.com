@@ -1,8 +1,8 @@
+import React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
 import { colors, media } from '@utils';
-import React from 'react';
 
 import './_WorkWrapper.scss';
 

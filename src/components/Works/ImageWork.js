@@ -1,7 +1,7 @@
+import React from 'React';
 import glamorous from 'glamorous';
 
 import { WorkWrapper, WorkInfo } from './WorkWrapper';
-import React from 'React';
 
 const Image = glamorous.img({
   width: '100%',

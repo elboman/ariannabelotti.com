@@ -2,21 +2,15 @@ import React from 'react';
 import { css } from 'glamor';
 import { ThemeProvider } from 'glamorous';
 import Helmet from 'react-helmet';
+import Typekit from 'react-typekit';
 
 import { Navbar, MainContent, Footer, Favicons, PhotoswipeGallery } from '@components';
 
 import { colors } from '@utils';
 
-import './index.css';
+import { globalStyles } from "../../styles/index.css.js";
 
 css.insert(`
-  html {
-    font-family: 'Spectral', serif;
-    font-size: 100%;
-    line-height: 1.45rem;
-    -webkit-font-smoothing: antialiased;
-  }
-
   img {
     width: 100%;
   }
@@ -76,6 +70,8 @@ css.insert(`
   }
 `);
 
+css.insert(globalStyles);
+
 const theme = {
   main: {
     colors: {
@@ -124,6 +120,7 @@ export const App = ({ children }) => (
         <Footer />
       </MainContent>
       <PhotoswipeGallery />
+      <Typekit kitId="pgg6hwn" />
     </div>
   </ThemeProvider>
 );
