@@ -1,11 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import glamorous from 'glamorous';
 
-import { ContentWrapper, SocialIcons } from '@components';
+import { App, ContentWrapper } from '@components';
 import { media, font, colors } from '@utils';
-
-import thankYouGif from '@assets/thankyou.gif';
 
 const ContentInner = glamorous.div({
   textAlign: 'center',
@@ -44,34 +42,36 @@ const Smaller = glamorous.div({
 const MailLink = glamorous.a();
 
 const AboutPage = () => (
-  <ContentWrapper>
-    <ContentInner>
-      <Hero>
-        <p>
-          Hi, I'm Arianna Belotti, illustrator, concept artist, animator
-          currently based in London, UK.
+  <App>
+    <ContentWrapper>
+      <ContentInner>
+        <Hero>
+          <p>
+            Hi, I'm Arianna Belotti, illustrator, concept artist, animator
+            currently based in London, UK.
         </p>
-      </Hero>
-      <Smaller>
-        <p>
-          I work with amazing people to bring projects to life through concept
+        </Hero>
+        <Smaller>
+          <p>
+            I work with amazing people to bring projects to life through concept
           design and art direction (check out{' '}
-          <Link to="/art/shidee-rpg-game">Shidee</Link> and{' '}
-          <Link to="/motion/freedom-in-thought">Freedom in Thought</Link>). I
-          work remotly with clients around the world, in particular US, Canada,
-          UK and Italy.
+            <Link to="/art/shidee-rpg-game">Shidee</Link> and{' '}
+            <Link to="/motion/freedom-in-thought">Freedom in Thought</Link>). I
+            work remotly with clients around the world, in particular US, Canada,
+            UK and Italy.
         </p>
-        <p>My main passions are 🕹, 🎥 and driking a lot of 🍵.</p>
-        <p>
-          Drop me at line at{' '}
-          <MailLink href="mailto:hello@ariannabelotti.com">
-            hello@ariannabelotti.com
+          <p>My main passions are 🕹, 🎥 and driking a lot of 🍵.</p>
+          <p>
+            Drop me at line at{' '}
+            <MailLink href="mailto:hello@ariannabelotti.com">
+              hello@ariannabelotti.com
           </MailLink>{' '}
-          or you can find me on social networks.
+            or you can find me on social networks.
         </p>
-      </Smaller>
-    </ContentInner>
-  </ContentWrapper>
+        </Smaller>
+      </ContentInner>
+    </ContentWrapper>
+  </App>
 );
 
 export default AboutPage;

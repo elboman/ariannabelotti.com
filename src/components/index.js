@@ -12,3 +12,4 @@ export * from './SharingMetadata';
 export * from './Footer';
 export * from './WithZoomableImages';
 export * from './PhotoswipeGallery';
+export * from './App';

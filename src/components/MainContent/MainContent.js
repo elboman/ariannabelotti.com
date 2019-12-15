@@ -2,6 +2,7 @@ import React from 'react';
 import glamorous from 'glamorous';
 
 import { media } from '@utils';
+import { App } from '../App';
 
 const Wrapper = glamorous.div({
   padding: 0,

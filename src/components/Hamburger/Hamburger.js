@@ -2,13 +2,10 @@ import React from 'react';
 import glamorous from 'glamorous';
 
 import { colors } from '@utils';
+import './Hamburger.css';
 
 const bgColor = {
   backgroundColor: colors.accentDark,
-};
-
-const activeBgColor = {
-  backgroundColor: colors.accent,
 };
 
 const HamburgerInner = glamorous.div({
@@ -21,7 +18,6 @@ const HamburgerInner = glamorous.div({
   },
 });
 
-import './Hamburger.css';
 
 export const Hamburger = ({ active, ...rest }) => (
   <div

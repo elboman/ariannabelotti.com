@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import glamorous, { Video } from 'glamorous';
+import { Link } from 'gatsby';
 import _get from 'lodash/get';
+import { graphql } from 'gatsby';
 
-import { media, font } from '@utils';
 import {
+  App,
   ContentWrapper,
   MainContainer,
   GridWrapper,
@@ -24,11 +24,11 @@ const ArtPage = ({ data }) => {
     const WorkComponent = isVideoCover ? VideoWork : ImageWork;
     const workProps = isVideoCover
       ? {
-          url: work.frontmatter.coverimage.fields.publicUrl,
-        }
+        url: work.frontmatter.coverimage.fields.publicUrl,
+      }
       : {
-          src: work.frontmatter.coverimage.childImageSharp.responsiveSizes.src,
-        };
+        src: work.frontmatter.coverimage.childImageSharp.resolutions.src,
+      };
     return (
       <Link to={`/art/${work.frontmatter.slug}`} key={work.id}>
         <WorkComponent
@@ -41,11 +41,13 @@ const ArtPage = ({ data }) => {
   });
 
   return (
-    <MainContainer>
-      <ContentWrapper>
-        <GridWrapper>{allWorks}</GridWrapper>
-      </ContentWrapper>
-    </MainContainer>
+    <App>
+      <MainContainer>
+        <ContentWrapper>
+          <GridWrapper>{allWorks}</GridWrapper>
+        </ContentWrapper>
+      </MainContainer>
+    </App>
   );
 };
 
@@ -76,7 +78,7 @@ export const query = graphql`
                 publicUrl
               }
               childImageSharp {
-                responsiveSizes {
+                resolutions(width: 800) {
                   src
                 }
               }

@@ -1,6 +1,7 @@
 import glamorous from 'glamorous';
 
 import { WorkWrapper, WorkInfo } from './WorkWrapper';
+import React from 'React';
 
 const Video = glamorous.video({
   width: '100%',

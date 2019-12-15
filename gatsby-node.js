@@ -1,17 +1,30 @@
 const path = require('path');
 
-exports.modifyWebpackConfig = function({ config, env }) {
-  config._config.resolve.alias = {
-    '@components': path.resolve('src/components/'),
-    '@utils': path.resolve('src/utils/'),
-    '@pages': path.resolve('src/pages/'),
-    '@assets': path.resolve('src/assets/'),
-  };
-  return config;
+// exports.modifyWebpackConfig = function ({ config, env }) {
+//   config._config.resolve.alias = {
+//     '@components': path.resolve('src/components/'),
+//     '@utils': path.resolve('src/utils/'),
+//     '@pages': path.resolve('src/pages/'),
+//     '@assets': path.resolve('src/assets/'),
+//   };
+//   return config;
+// };
+
+exports.onCreateWebpackConfig = function ({ actions }) {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '@components': path.resolve(__dirname, 'src/components/'),
+        '@utils': path.resolve(__dirname, 'src/utils/'),
+        '@pages': path.resolve(__dirname, 'src/pages/'),
+        '@assets': path.resolve(__dirname, 'src/assets/'),
+      }
+    }
+  });
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage, createRedirect } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage, createRedirect } = actions;
 
   // Redirects
 

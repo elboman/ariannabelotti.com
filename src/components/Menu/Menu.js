@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import glamorous from 'glamorous';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import { Hamburger } from '@components';
 

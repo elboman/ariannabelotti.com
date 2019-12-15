@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import glamorous from 'glamorous';
 import { format } from 'date-fns';
+import { graphql } from 'gatsby';
 
-import { MainContainer, ContentPadding } from '@components';
-import { colors } from '@utils';
+import { App, MainContainer, ContentPadding } from '@components';
 
 const PostDate = glamorous.span({
   marginRight: '1rem',
@@ -16,21 +16,23 @@ const BlogPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
   const posts = edges.map(single => single.node);
   return (
-    <MainContainer>
-      <ContentPadding>
-        <h1>Blog</h1>
-        {posts.map(({ frontmatter }) => (
-          <div key={frontmatter.slug}>
-            <PostDate>
-              {format(new Date(frontmatter.date), 'DD/MM/YY')}
-            </PostDate>
-            <StyledLink to={`/blog/${frontmatter.slug}`}>
-              <span>{frontmatter.title}</span>
-            </StyledLink>
-          </div>
-        ))}
-      </ContentPadding>
-    </MainContainer>
+    <App>
+      <MainContainer>
+        <ContentPadding>
+          <h1>Blog</h1>
+          {posts.map(({ frontmatter }) => (
+            <div key={frontmatter.slug}>
+              <PostDate>
+                {format(new Date(frontmatter.date), 'dd/MM/yy')}
+              </PostDate>
+              <StyledLink to={`/blog/${frontmatter.slug}`}>
+                <span>{frontmatter.title}</span>
+              </StyledLink>
+            </div>
+          ))}
+        </ContentPadding>
+      </MainContainer>
+    </App>
   );
 };
 

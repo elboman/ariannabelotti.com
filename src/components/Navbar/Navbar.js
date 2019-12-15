@@ -1,9 +1,8 @@
 import React from 'react';
 import glamorous from 'glamorous';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import { Menu } from '@components';
-import { font } from '@utils';
 
 import profilePic from '@assets/aribe.jpg';
 
@@ -43,10 +42,6 @@ const SCMenu = glamorous.div({
   alignItems: 'flex-end',
   alignContent: 'flex-end',
   justifyContent: 'flex-end',
-});
-
-const SCMenuItem = glamorous.div({
-  padding: '1rem',
 });
 
 export const Navbar = ({ menu }) => (

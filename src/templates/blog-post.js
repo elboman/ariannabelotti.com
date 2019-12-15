@@ -1,9 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import _get from 'lodash/get';
-import ReactDisqusThread from 'react-disqus-thread';
+// import ReactDisqusThread from 'react-disqus-thread';
+import { DiscussionEmbed } from 'disqus-react';
+import { graphql } from 'gatsby';
 
 import {
+  App,
   ContentPadding,
   MainContainer,
   SharingMetadata,
@@ -16,11 +19,18 @@ export default function Template({ data, ...props }) {
   const pageUrl = `https://ariannabelotti.com${props.location.pathname}`;
   const coverImage = _get(
     post,
-    'frontmatter.coverimage.childImageSharp.responsiveSizes.src',
+    'frontmatter.coverimage.childImageSharp.resolutions.src',
     ''
   );
+
+  const disqusConfig = {
+    identifier: `ariannabelotti-${post.frontmatter.slug}`,
+    title: post.frontmatter.title,
+    url: pageUrl
+  };
+
   return (
-    <div>
+    <App>
       <MainContainer>
         <ContentPadding>
           <Helmet title={title} />
@@ -39,15 +49,13 @@ export default function Template({ data, ...props }) {
       </MainContainer>
       <DisqusWrapper>
         <MainContainer>
-          <ReactDisqusThread
+          <DiscussionEmbed
             shortname="ariannabelotti"
-            identifier={`ariannabelotti-${post.frontmatter.slug}`}
-            title={post.frontmatter.title}
-            url={pageUrl}
+            config={disqusConfig}
           />
         </MainContainer>
       </DisqusWrapper>
-    </div>
+    </App>
   );
 }
 
@@ -65,7 +73,7 @@ export const pageQuery = graphql`
             publicUrl
           }
           childImageSharp {
-            responsiveSizes {
+            resolutions(width: 800) {
               src
             }
           }
