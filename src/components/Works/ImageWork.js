@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import glamorous from 'glamorous';
 
 import { WorkWrapper, WorkInfo } from './WorkWrapper';
